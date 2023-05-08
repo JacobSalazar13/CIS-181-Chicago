@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap");
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #16425b;
+	margin: 0;
+	line-height: 24px;
+}
+
+#header {
+	background-color: #2f6690;
+	background-image: url("chicagoflag.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 300px;
+	margin: 0 10%;
+}
+
+#nav {
+	background-color: #7e2424;
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0 10%;
+	padding: 10px 0;
+}
+
+#nav a {
+	font-family: "Atkinson Hyperlegible", sans-serif;
+	color: white;
+	transition: 0.1s ease-in-out;
+}
+
+#nav a:hover {
+	transform: scale(1.1);
+	color: #d9dcd6;
+}
+
+#content {
+	background-color: #f5f5f4;
+	font-family: "Atkinson Hyperlegible", sans-serif;
+	margin: 0 10%;
+	padding: 1em 4em;
+}
+
+table {
+	border: 5px solid transparent;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+th,
+td {
+	text-align: center;
+	padding: 5px;
+	word-wrap: break-word;
+	border-right: solid 1px black;
+	border-left: solid 1px black;
+}
+
+tr:nth-child(even) {
+	background-color: #d9dcd6;
+}
+
+tr:first-child {
+	background-color: #2f6690;
+	color: white;
+}
+
+.intro-content:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+a {
+	text-decoration: none;
+	color: #3a7ca5;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #81c3d7;
+}
+
+.left {
+	float: left;
+	width: 25%;
+}
+
+.right {
+	float: left;
+	width: 75%;
+}
+
+.museum-card {
+	background-color: #f5f5f4;
+	margin-top: 3em;
+}
+
+.museum-card div {
+	background-color: #f5f5f4;
+	display: flex;
+}
+
+.museum-left {
+	width: 25%;
+}
+
+.museum-left img {
+	margin: 0 auto;
+	max-height: 150px;
+}
+
+.museum-right {
+	width: 75%;
+}
+
+@media only screen and (max-width: 768px) {
+	.museum-card div {
+		flex-direction: column;
+	}
+	.left,
+	.right,
+	.museum-left,
+	.museum-right {
+		width: 100%;
+	}
+}
